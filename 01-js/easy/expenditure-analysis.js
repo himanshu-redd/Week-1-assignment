@@ -73,19 +73,19 @@ const transactions = [
 function calculateTotalSpentByCategory(transactions) {
   var categoryAndSpends = new Map();
 
-  for (var i = 0; i < transactions.length; i++){
+  for (var i = 0; i < transactions.length; i++) {
 
-    const category = transactions[i].category; 
-    const price = transactions[i].price; 
+    const category = transactions[i].category;
+    const price = transactions[i].price;
 
-    if(!categoryAndSpends.has(category)){ 
-        categoryAndSpends.set(category, price); 
+    if (!categoryAndSpends.has(category)) {
+      categoryAndSpends.set(category, price);
     } else {
-      categoryAndSpends.set(category, categoryAndSpends.get(category) + price); 
+      categoryAndSpends.set(category, categoryAndSpends.get(category) + price);
     }
   }
-  
-  console.log(categoryAndSpends); 
+
+  console.log(categoryAndSpends);
 }
 
 calculateTotalSpentByCategory(transactions); 

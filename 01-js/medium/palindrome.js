@@ -7,8 +7,8 @@
 */
 
 function isPalindrome(str) {
-  const reverse = str.split("").reverse().join(""); 
-  return str == reverse; 
+  const reverse = str.split("").reverse().join("");
+  return str == reverse;
 }
 
 console.log(isPalindrome("cbba")); 
