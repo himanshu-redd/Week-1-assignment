@@ -19,13 +19,15 @@ function runLoop(range) {
 
 function calculateTime(n) {
     var seconds;
-    seconds = runLoop(100);
-    console.log("1-100 : " + seconds);
-    seconds = runLoop(10000);
-    console.log("1-10000 : " + seconds);
-    seconds = runLoop(1000000);
-    console.log("1-1000000 : " + seconds);
 
+    seconds = runLoop(100);
+    console.log("1-100 : " + seconds + "\n");
+
+    seconds = runLoop(10000);
+    console.log("1-10000 : " + seconds + "\n");
+
+    seconds = runLoop(1000000);
+    console.log("1-1000000 : " + seconds + "\n");
 }
 
 calculateTime(); 

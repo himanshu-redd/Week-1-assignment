@@ -17,6 +17,24 @@
   - `npm run test-calculator`
 */
 
-class Calculator {}
+class Calculator {
 
-module.exports = Calculator;
+  result;
+
+
+  expression() {
+    var expression = "10 + 2 ()     6 - 10";
+    var trimmed = '';
+    for (var i = 0; i < expression.length; i++) {
+      if (expression[i] !== ' ') {
+        trimmed = trimmed + expression[i];
+      }
+    }
+    return trimmed;
+  }
+
+
+}
+
+const calculator = new Calculator();
+calculator.expression(); 
